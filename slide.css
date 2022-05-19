@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Merriweather:wght@300;700&family=Montserrat:wght@500&family=Neonderthaw&family=Pacifico&family=Paytone+One&family=Plus+Jakarta+Sans:wght@800&family=Poppins:wght@300&family=Radio+Canada&family=Roboto+Mono:wght@502&family=Roboto+Slab:wght@700&family=Roboto:wght@300;400;500;700&family=Slabo+27px&family=Ubuntu:wght@700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-shizing:border-box;
+}
+
+body{
+    display:flex;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    background-color:#fef6e4;
+}
+section{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:1075px;
+    height:450px;
+}
+
+.swiper{
+    width:770px;
+}
+.image{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    padding:3px;
+    border:4px solid  #8bd3dd ;
+    background-color:#F582AE;
+    
+}
+.image img{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    border-radius:50%;
+    
+}
+
+.card{
+    position:relative;
+    border-radius:15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin:20px 0;
+    max-width:240px;
+}
+.card-content{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 30px;
+    }
+
+.card::before{
+    content: '';
+    position: absolute;
+    top:0;
+    width:100%;
+    height:31%;
+    background:#8bd3dd;
+    border-radius:15px 15px 0 0;
+    z-index:-1;
+}
+
+.name-profesi{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top: 10px;
+}
+.name-profesi .name{
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    color:#001858;
+}
+.name-profesi .profesi{
+    font-size:15px;
+    color:#001858;
+    font-family: 'Montserrat', sans-serif;
+}
+.links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 25px;
+}
+.links .bi{
+    margin:0 12px;
+    color:#F582AE;
+    cursor:pointer;
+    opacity:0.6;
+    transition: all 0.3s;
+}
+.links .bi:hover{
+    opacity:1;
+}
+.btn-contact{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;
+}
+.btn-contact .about button{
+    outline:0;
+    border:0;
+    background-color:#F582AE;
+    padding:6px 32px;
+    border-radius:25px;
+    color:#001858;
+    font-size:12px;
+    font-family: 'Montserrat', sans-serif;
+    cursor:pointer;
+    margin:10px 0;
+    transition: all 0.3s;
+}
+.btn-contact .hired button{
+    outline:0;
+    border:0;
+    background-color:#F582AE;
+    padding:6px 20px;
+    border-radius:25px;
+    color:#001858;
+    font-size:12px;
+    font-family: 'Montserrat', sans-serif;
+    cursor:pointer;
+    transition: all 0.3s;
+}
+.btn-contact button:hover{
+    background-color:#Fcaaaa;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    width:26px;
+    height:7px;
+    border-radius:25px;
+    background:#F582AE;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    color:#8bd3dd;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    color:#8bd3dd;
+}
+
